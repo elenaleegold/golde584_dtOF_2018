@@ -66,6 +66,7 @@ xcuserdata
 
 # Visual Studio
 *.sdf
+*.opendb
 *.opensdf
 *.suo
 *.pdb
