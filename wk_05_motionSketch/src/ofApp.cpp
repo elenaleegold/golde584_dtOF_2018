@@ -15,10 +15,7 @@ void ofApp::setup(){
 	smokeX = ofGetHeight()*0.5;
 	smokeX2 = ofGetHeight()*0.5;
 	smokeAnim = false;
-
-
-
-}
+	ofSetCircleResolution(100);
 
 //--------------------------------------------------------------
 void ofApp::update(){
@@ -31,7 +28,7 @@ void ofApp::update(){
 void ofApp::draw() {
 	float time = ofGetElapsedTimef();
 	float rand = ofSignedNoise(time);
-	ofEnableSmoothing();
+
 	p1 = glm::vec2(ofGetWidth()*0.5 - 50, ofGetHeight() *0.5);
 	p2 = glm::vec2(ofGetWidth()*0.5 + 50, ofGetHeight() *0.5);
 	p3 = glm::vec2(ofGetWidth()*0.5, ofGetHeight() *0.5 - 150);
@@ -45,6 +42,8 @@ void ofApp::draw() {
 
 	p3b.x += rand * 40;
 	p3b.y += rand * 20;
+
+	cout << p3.x << endl;
 
 	if (p3.x > 520) {
 		circY = ofMap(p3.x, 520, 555, 110, 70);
@@ -60,7 +59,6 @@ void ofApp::draw() {
 		circYB = ofMap(p3b.x, 500, 490, 80, 70);
 	}
 
-	cout << p3b.x << endl;
 
 	//candlebase
 	ofPushStyle();
