@@ -1,6 +1,8 @@
 #pragma once
 
 #include "ofMain.h"
+#include "Spaghetti.h"
+#include "Meatball.h"
 
 class ofApp : public ofBaseApp {
 
@@ -21,17 +23,25 @@ public:
 	void dragEvent(ofDragInfo dragInfo);
 	void gotMessage(ofMessage msg);
 
-	void timeKeep(float t, float interv);
-	ofColor cc;
-	float lastUserPress;
-	float gamePressRhythm; //
-	int count, stateCounter;
-	float animationPace;
-	float lastInterv;
-	float pauseTime;
-	float interval;
-	float time;
+	void startScreen();
 
-	//bool isRunning;
+	int dirX, dirY;
+
+	glm::vec2(startPos);
+	Spaghetti sp;
+	vector <Spaghetti> spArr;
+	std::array<Meatball, 10> stArr;
+
+	vector <ofColor> colors;
+
+	ofImage fork;
+	bool keyPress, activateStick, start, tutorialOn, fishPress, squishSound;
+	int y, score, meatballCount, squishCount; 
+
+	ofSoundPlayer amore, squish;
+
+	ofTrueTypeFont myFont, myBigFont;
+
+	Meatball m;
 
 };
