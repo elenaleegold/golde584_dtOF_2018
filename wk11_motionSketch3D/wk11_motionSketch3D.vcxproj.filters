@@ -10,16 +10,7 @@
 		<ClCompile Include="src\main.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
-		<ClCompile Include="src\Meatball.cpp">
-			<Filter>src</Filter>
-		</ClCompile>
 		<ClCompile Include="src\ofApp.cpp">
-			<Filter>src</Filter>
-		</ClCompile>
-		<ClCompile Include="src\Spaghetti.cpp">
-			<Filter>src</Filter>
-		</ClCompile>
-		<ClCompile Include="src\TimeKeep.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
 	</ItemGroup>
@@ -32,16 +23,7 @@
 		<ClInclude Include="src\ofApp.h">
 			<Filter>src</Filter>
 		</ClInclude>
-		<ClInclude Include="src\Meatball.h">
-			<Filter>src</Filter>
-		</ClInclude>
 		<ClInclude Include="src\ofApp.h">
-			<Filter>src</Filter>
-		</ClInclude>
-		<ClInclude Include="src\Spaghetti.h">
-			<Filter>src</Filter>
-		</ClInclude>
-		<ClInclude Include="src\TimeKeep.h">
 			<Filter>src</Filter>
 		</ClInclude>
 	</ItemGroup>

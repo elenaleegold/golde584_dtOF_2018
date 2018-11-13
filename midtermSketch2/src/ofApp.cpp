@@ -85,12 +85,10 @@ void ofApp::update(){
 		cout << "Collision detected!" << endl;
 		activateStick = true;
 		squishSound = true;
-		
 	}
 	// if collision, change positioning of meatball to align with fork 
 	if (activateStick) {
 		m.setPos(glm::vec2(ofGetWidth()*0.5-(m.radius), y + fork.getHeight()-(m.radius*0.5)));
-
 	}
 
 	if (squishSound == true) {
