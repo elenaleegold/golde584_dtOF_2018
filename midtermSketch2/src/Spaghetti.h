@@ -18,7 +18,7 @@ public:
 	float period;  
 	float deg;
 	float dx;  
-	vector <float> yvalues;
+	     vector <float> yvalues;
 
 	void calcWave();
 	void renderWave();

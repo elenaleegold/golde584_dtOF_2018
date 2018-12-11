@@ -7,10 +7,10 @@
 		<ClCompile Include="src\main.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
-		<ClCompile Include="src\Block.cpp">
+		<ClCompile Include="src\Butcher.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
-		<ClCompile Include="src\Character.cpp">
+		<ClCompile Include="src\Cow.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
 		<ClCompile Include="src\main.cpp">
@@ -19,7 +19,7 @@
 		<ClCompile Include="src\ofApp.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
-		<ClCompile Include="src\Sequence.cpp">
+		<ClCompile Include="src\Trail.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
 	</ItemGroup>
@@ -32,16 +32,16 @@
 		<ClInclude Include="src\ofApp.h">
 			<Filter>src</Filter>
 		</ClInclude>
-		<ClInclude Include="src\Block.h">
+		<ClInclude Include="src\Butcher.h">
 			<Filter>src</Filter>
 		</ClInclude>
-		<ClInclude Include="src\Character.h">
+		<ClInclude Include="src\Cow.h">
 			<Filter>src</Filter>
 		</ClInclude>
 		<ClInclude Include="src\ofApp.h">
 			<Filter>src</Filter>
 		</ClInclude>
-		<ClInclude Include="src\Sequence.h">
+		<ClInclude Include="src\Trail.h">
 			<Filter>src</Filter>
 		</ClInclude>
 	</ItemGroup>

@@ -1,8 +1,9 @@
 #pragma once
 
 #include "ofMain.h"
-#include "Sequence.h"
-#include "Character.h"
+#include "Cow.h"
+#include "Butcher.h"
+#include "Trail.h"
 
 class ofApp : public ofBaseApp{
 
@@ -22,17 +23,27 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+		ofImage startScreen, endScreen;
+		bool free, debug, start, end;
+		int timer, score;
 
-		Sequence s;
-		Character main;
+		Cow cowtest;
 
-		int calcCurBlock();
-		int calcNextBlock();
-		int calcCurWidth();
+		int prob;
+		ofTrueTypeFont myBigFont;
+		ofTrueTypeFont myBiggerFont;
+		Butcher mainChar;
+		ofSoundPlayer track;
 
-		int windowWidth = 2736;
-		int windowHeight = 1824;
+		vector<Trail> trailLine;
+		vector<Cow> cowLine;
+		vector<Cow> vegLine;
 
-		bool stopMotion;
+		ofImage bg1, bg2;
+		int bg1X, bg1Y;
+		int bg2X, bg2Y;
+
+		void clearTrail(vector<Trail> vec);
+		void endGame();
 		
 };
